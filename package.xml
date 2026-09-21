@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>ros_mobile_robot_navigation_portfolio</name>
+  <version>0.1.0</version>
+  <description>Reconstructed ROS Kinetic mobile robot mapping and navigation practice portfolio.</description>
+  <maintainer email="2972512662@qq.com">Chen Xuanyue</maintainer>
+  <license>UNLICENSED</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>roscpp</depend>
+  <depend>std_msgs</depend>
+  <depend>move_base_msgs</depend>
+  <depend>actionlib</depend>
+
+  <export/>
+</package>
