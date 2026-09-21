@@ -37,18 +37,22 @@
 
 ## System Workflow
 
+The following diagram summarizes the mobile robot mapping and autonomous navigation workflow practiced in this project.
+
 ```mermaid
 flowchart LR
-    A[RPLIDAR / Robot Sensors] --> B[ROS Topics]
-    B --> C[Gmapping]
+    A[RPLIDAR / Sensors] --> B[ROS Topics]
+    B --> C[Gmapping SLAM]
     C --> D[Occupancy Grid Map]
     D --> E[map_server]
     E --> F[AMCL Localization]
     F --> G[move_base]
     G --> H[Global / Local Planner]
-    H --> I[/cmd_vel]
+    H --> I["/cmd_vel"]
     I --> J[Mobile Robot]
 ```
+
+The workflow covers sensor data acquisition, SLAM mapping, map storage, localization, path planning, and mobile robot motion control.
 
 ## Repository Structure
 
